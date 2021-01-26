@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+    <title> This JavaScript program displays entered input and dropdown in ul format   </title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h3> Welcome to Hussein Mohamud JavaScript Course PROG 209 Homework#3 </h3>
+     <p> This Programe accepts Customer last name, city, and perferance payment option.</p> 
+    <p>  Then, the output will be displayed the transection history before the customer</p>
+    <p>  close the website.</p> <br><br>       
+   
+
+    <form name = "mainFrom" onsubmit="return false">
+
+
+        <fieldset id="custInfo">
+            <br><br>
+            <legend>Customer Information</legend>
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" placeholder="Last Name"> <br><br>
+
+                <label for="city">Last Name:</label>
+                <input type="text" id="city" placeholder="City Name"> <br><br>
+        
+        
+
+                <label for="payment">Payment Preference:</label>
+                <select id="payment">
+                    <option >Cash </option>  
+                    <option >Debit Card </option> 
+                    <option >Visa or MC </option>                           
+                </select> <br><br>             
+
+                <input type="submit" value="Submit" onclick="formSubmitEvent()">      <br><br> 
+        </fieldset>           <br><br>              <br><br> 
+
+        <fieldset id="experience">
+            <legend>transaction accepted </legend>           
+             
+                <div id="grade1" class="solid"> 
+                    <br>
+                    <ul id="firstUl"> </ul>    
+                </div>
+        </fieldset> 
+
+    </form>
+
+        <!-- This JavaScript program displays entered input and dropdown in ul format  -->
+	<script src="main.js"></script>
+</body>
+</html>
